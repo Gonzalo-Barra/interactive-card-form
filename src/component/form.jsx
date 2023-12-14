@@ -1,15 +1,8 @@
-import React, { useState } from 'react'
-import './card.css'
+import React from 'react'
 
-export default function Form() {
-    const [cardValues, setCardValues] = useState({
-        name: '',
-        cardNumber: '',
-        MM: '',
-        YY: '',
-        CVC: ''
-      });
-    
+export default function Form({cardData}) {
+
+    const { cardValues, setCardValues} = cardData
       const handleInputChange = (inputName, value) => {
         let updatedValue = value;
     
@@ -48,11 +41,8 @@ export default function Form() {
       }
     
   return (
-    <div>
-
-
-    return (
-      <form method="post" onSubmit={handleSubmit} className="form">
+    <>
+      <form method="post" onSubmit={handleSubmit} className="flex">
         <label>
           Cardholder Name
           <br />
@@ -104,9 +94,9 @@ export default function Form() {
         </label>
         <button type="submit">Confirm</button>
       </form>
-    );
+    ;
   
   
-    </div>
+    </>
   )
 }
