@@ -1,0 +1,7 @@
+.frontCard{
+    background-image:url('../assets/bg-card-front.png');
+    background-repeat: no-repeat;
+    /* Otras propiedades opcionales */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 100%; /* Ajusta la altura según tus necesidades */
+}
