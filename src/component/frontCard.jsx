@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../index.css"
 export default function frontCard({ cardData }) {
   const { cardValues } = cardData;
   return (
